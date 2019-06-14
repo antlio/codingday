@@ -12981,53 +12981,50 @@ a {
     a:visited:hover {
       color: #fd0f15; }
 
-/* line 1, /Users/anthony/code/Projects/codingday/source/stylesheets/components/_banner.scss */
-.banner {
-  overflow-x: hidden; }
-  /* line 3, /Users/anthony/code/Projects/codingday/source/stylesheets/components/_banner.scss */
-  .banner-content {
+/* line 2, /Users/anthony/code/Projects/codingday/source/stylesheets/components/_banner.scss */
+.banner-content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+  position: relative; }
+  /* line 10, /Users/anthony/code/Projects/codingday/source/stylesheets/components/_banner.scss */
+  .banner-content-left h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: black;
+    line-height: 100px; }
+  /* line 16, /Users/anthony/code/Projects/codingday/source/stylesheets/components/_banner.scss */
+  .banner-content-left p {
+    font-size: 21px; }
+  /* line 19, /Users/anthony/code/Projects/codingday/source/stylesheets/components/_banner.scss */
+  .banner-content-left .logo-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-columns: (250px)[2];
+    grid-template-columns: repeat(2, 250px);
     align-items: center;
-    justify-items: center;
-    height: 100vh;
-    position: relative; }
-    /* line 11, /Users/anthony/code/Projects/codingday/source/stylesheets/components/_banner.scss */
-    .banner-content-left h1 {
-      font-size: 60px;
-      font-weight: 700;
-      color: black;
-      line-height: 100px; }
-    /* line 17, /Users/anthony/code/Projects/codingday/source/stylesheets/components/_banner.scss */
-    .banner-content-left p {
-      font-size: 21px; }
-    /* line 20, /Users/anthony/code/Projects/codingday/source/stylesheets/components/_banner.scss */
-    .banner-content-left .logo-container {
-      display: -ms-grid;
-      display: grid;
-      -ms-grid-columns: (250px)[2];
-      grid-template-columns: repeat(2, 250px);
-      align-items: center;
-      margin-top: 50px; }
-    /* line 27, /Users/anthony/code/Projects/codingday/source/stylesheets/components/_banner.scss */
-    .banner-content-right {
-      padding: 20px;
-      -ms-grid-column-align: end;
-          justify-self: end; }
-      /* line 30, /Users/anthony/code/Projects/codingday/source/stylesheets/components/_banner.scss */
-      .banner-content-right img {
-        width: 500px;
-        border-radius: 6px;
-        max-width: 100%; }
-  /* line 37, /Users/anthony/code/Projects/codingday/source/stylesheets/components/_banner.scss */
-  .banner svg {
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
-    right: -25%;
-    z-index: -1; }
+    margin-top: 50px; }
+  /* line 26, /Users/anthony/code/Projects/codingday/source/stylesheets/components/_banner.scss */
+  .banner-content-right {
+    padding: 20px;
+    -ms-grid-column-align: end;
+        justify-self: end; }
+    /* line 29, /Users/anthony/code/Projects/codingday/source/stylesheets/components/_banner.scss */
+    .banner-content-right img {
+      width: 500px;
+      border-radius: 6px;
+      max-width: 100%; }
+/* line 36, /Users/anthony/code/Projects/codingday/source/stylesheets/components/_banner.scss */
+.banner svg {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  right: -25%;
+  z-index: -1; }
 
 /* line 1, /Users/anthony/code/Projects/codingday/source/stylesheets/components/_button.scss */
 .btn-medium {
