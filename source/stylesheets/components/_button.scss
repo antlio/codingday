@@ -1,0 +1,54 @@
+.btn-medium {
+  color: #999999;
+  border: 1px solid #999999;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+}
+.btn-medium:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: #999999;
+}
+.btn-treehouse {
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: #6AD58B;
+  transition: background 0.3s ease;
+}
+.btn-treehouse:hover {
+  opacity: 1;
+  background: #3ac162;
+  text-decoration: none;
+  color: white;
+}
+
+tag {
+  border-radius: 3px;
+  padding: 0 15px 3px;
+  &.red {
+    color: #FD1015;
+    background-color: #FFE0E1;
+  }
+  &.purple {
+    color: #7E73FF;
+    background-color: #ECEAFF;
+  }
+  &.green {
+    color: #1EDD88;
+    background-color: #E4FFF3;
+  }
+  &.blue {
+    color: #62DDF5;
+    background-color: #E8FAFE;
+  }
+  &.yellow {
+    color: #FFC65A;
+    background-color: #FFF7E8;
+  }
+}
+
+/* Build your own button classes ! */

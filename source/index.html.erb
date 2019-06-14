@@ -1,0 +1,316 @@
+---
+title: Landing page HTML/CSS - Troispointquatorze
+---
+
+<%= partial "components/banner" %>
+
+<div class="container-fluid readme">
+  <div class="row">
+    <div class="col-xs-12">
+
+      <section class="readme-section">
+        <h2 class="readme-header">1. Commençons par le <tag class="green">setup</tag></h2>
+        <ol>
+          <li>1 - Ouvrez Sublime Text. un fenêtre noir devrait s'afficher.</li>
+          <li>2 - Créez un dossier <code>landing</code> sur votre bureaux. Glissez & déposez ce dossier dans Sublime Text window.</li>
+          <li>
+            3 - Dans la navigation gauche de Sublime Text :
+            <ul>
+              <li>Clique droit <strong>"New file"</strong></li>
+              <li>Enregistrez sous en le nommant <code>index.html</code> avec <strong>Cmd + S</strong> ou <strong>Ctrl + S</strong></li>
+              <li>Réitérez en créant le fichier <code>style.css</code></li>
+              <li>Ensuite choisissez <strong>"New Folder"</strong> et créez un dossier <code>images</code></li>
+            </ul>
+            </ul>
+          </li>
+          <li>4 - Pour finir double-cliquez sur <code>index.html</code> pour l'ouvrir dans Chrome</li>
+        </ol>
+
+        <img src='images/setup.png' width="100%" style="box-shadow: 0 15px 35px rgba(126,87,88,.1), 0 5px 15px rgba(0,0,0,.07);" />
+      </section>
+
+      <section class="readme-section">
+        <h2 class="readme-header">2. Ajoutons du contenu <tag class="purple">HTML</tag></h2>
+        <ul>
+          <li>
+            Pour gagner du temps, Faites clique-droit sur les images suivantes et sauvez les dans votre dossier <code>images</code>
+            <ul class="list-inline">
+              <li><img src="images/hammer.png" alt="" width="100"></li>
+              <li><img src="images/laptop.png" alt="" width="100"></li>
+              <li><img src="images/book.png" alt="" width="100"></li>
+              <li><img src="images/libra.png" alt="" width="100"></li>
+            </ul>
+          </li>
+          <li>Commencez ensuite à partir de ce code HTML dans <code>index.html</code></li>
+        </ul>
+<% code("html") do %>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Troispointquatorze landing page</title>
+  </head>
+  <body>
+    <h1>Le cabinet d'avocat 2.0</h1>
+    <p>Contrats, propriété intellectuelle et innovation</p>
+    <p>
+      <a href="#">Contactez nous</a>
+    </p>
+
+    <img src="images/hammer.png" alt="icon marteau" width="100">
+    <h2>Droit du numérique</h2>
+    <p>Protection, licences, contrats SaaS et d’intégration.</p>
+
+    <img src="images/laptop.png" alt="icon ordinateur" width="100">
+    <h2>Nouvelles technologies</h2>
+    <p>Conditions générales d’utilisation, contrats de développement</p>
+
+    <img src="images/book.png" alt="icon livre" width="100">
+    <h2>Propriété intellectuelle</h2>
+    <p>Définition de la stratégie, protection et audit de portefeuilles</p>
+
+    <img src="images/libra.png" alt="icon balance" width="100">
+    <h2>Médiation</h2>
+    <p>Et transactions dans le cadre de contentieux.</p>
+
+    <p>Landing page créée par ©Troispointquatorze</p>
+  </body>
+</html>
+<% end %>
+        <h3>Extra - utiliser des icons personnels chiadés</h3>
+        <ul>
+          <li>Vous pouvez choisir vos icons sur <a href="https://iconstore.co/" target="_blank">IconStore</a>, <a href="https://thenounproject.com/" target="_blank">The Noun Project</a> ou <a href="https://nucleoapp.com/premium-icons/" target="_blank">NucleoApp</a> (ils ont des packs gratuits).</li>
+          <li><strong>Tips</strong>: Ne manquez pas de surveiller <a href="https://www.producthunt.com/search?q=icons" target="_blank">les nouvelles ressources d'icons sur Product Hunt</a></li>
+        </ul>
+      </section>
+
+      <section class="readme-section">
+        <h2 class="readme-header">3. <tag class="blue">CSS</tag> pour la font & couleur</h2>
+        <ul>
+          <li>
+            <p>Lier votre stylesheet <code>style.css</code> dans la section <code>head</code> de votre HTML</p>  
+          </li>
+        </ul>
+
+
+<% code("html") do %>
+<head>
+  <link href='style.css' rel='stylesheet'>
+</head>
+<% end %>
+        <p>Copiez/collez ensuite le code CSS ci-dessous <code>style.css</code> et <strong>modifier le</strong> car il est intentionellement disgracieux</p>
+        <ul>
+          <li>Pour les fonts utilisez <a href="https://www.google.com/fonts" target="_blank">Google Fonts</a></li>
+          <li>Pour les couleurs utilisez <a href="http://www.colorzilla.com/chrome/" target="_blank">Chrome plugin Colorzilla</a> pour récupérer les couleurs des autres sites</li>
+          <li>Vous trouverez aussi de belles inspirations couleurs sur <a href="https://coolors.co/" target="_blank">Coolors</a> ou <a href="https://colorhunt.co/" target="_blank">Color Hunt</a></li>
+        </ul>
+<% code("css") do %>
+/* style.css */
+body{
+  background: rgb(245,245,245);
+  color: green;
+  font-size: 25px;
+  font-family: Helvetica;
+}
+h1{
+  font-family: Courier;
+  color: red;
+  font-weight: lighter;
+  font-size: 10px;
+}
+h2 {
+  font-family: Courier;
+  color: pink;
+  font-weight: lighter;
+  font-size: 8px;
+}
+a {
+  color: yellow;
+}
+a:hover {
+  text-decoration: none;
+  color: purple;
+}
+<% end %>
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">4. Découper en <tag class="red">div</tag></h2>
+        <ul>
+          <li>
+            <p>Enveloppez les différentes sections dans différentes <code>div</code></p>
+          </li>
+        </ul>
+
+<% code("html") do %>
+<div>
+  <h1>Le cabinet d'avocat 2.0</h1>
+  <p>Contrats, propriété intellectuelle et innovation</p>
+  <p>
+    <a href="#">Contactez nous</a>
+  </p>
+</div>
+
+<div>
+  <img src="images/hammer.png" alt="icon marteau" width="100">
+  <h2>Droit du numérique</h2>
+  <p>Protection, licences, contrats SaaS et d’intégration.</p>
+</div>
+
+<div>
+  <img src="images/laptop.png" alt="icon ordinateur" width="100">
+  <h2>Nouvelles technologies</h2>
+  <p>Conditions générales d’utilisation, contrats de développement</p>
+</div>
+
+<div>
+  <img src="images/book.png" alt="icon livre" width="100">
+  <h2>Propriété intellectuelle</h2>
+  <p>Définition de la stratégie, protection et audit de portefeuilles</p>
+</div>
+
+<div>
+  <img src="images/libra.png" alt="icon balance" width="100">
+  <h2>Médiation</h2>
+  <p>Et transactions dans le cadre de contentieux.</p>
+</div>
+
+<div>
+  <p>Landing page créée par ©Troispointquatorze</p>
+</div>
+<% end %>
+
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">5. Nommer les <tag class="yellow">tags</tag></h2>
+        <ul>
+          <li>Nommer votre banner et footer en utilisant un <code>id</code> commme <code>&lt;div id="banner"&gt;</code> et <code>&lt;div id="footer"&gt;</code></li>
+          <li>Nommer vos fonctionnalités en utilisant une <code>class</code> comme <code>&lt;div class="card"&gt;</code></li>
+          <li>Ajoutez ensuite ce code CSS</li>
+        </ul>
+<% code("css") do %>
+#banner{
+  text-align: center;
+  background-image: linear-gradient(rgba(200, 200, 200, 0.3), rgba(200, 200, 200, 0.3)), url("https://source.unsplash.com/1600x900/?lawyer");
+  background-size: cover;
+  padding: 150px 0;
+  color: white;
+}
+#banner h1 {
+  color: white;
+  font-size: 50px;
+}
+#banner p {
+  color: white;
+  opacity: 0.8;
+  font-size: 30px;
+  font-weight: lighter;
+}
+#footer{
+  padding: 30px;
+  background: rgb(30, 30, 30);
+  color: lightgrey;
+}
+.card{
+  padding: 50px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.container {
+  width: 100%!important;
+}
+<% end %>
+
+<h3>Extra - trouver une belle image de fond</h3>
+<ul>
+  <li>Vous trouverez des examples d'images sur <a href="https://www.pexels.com/" target="_blank">Pexels</a></li>
+</ul>
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">6. <tag class="green">Fontawesome</tag> pour les icons</h2>
+        <ul>
+          <li>
+            <p>Ajoutez le stylesheet fontawesome dans votre <code>head</code></p> 
+          </li>
+        </ul>
+<% code("html") do %>
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+</head>
+<% end %>
+        <ul>
+          <li>
+            <p>Ajoutez ensuite ceci dans le footer</p>
+          </li>
+        </ul>
+<% code("html") do %>
+<ul>
+  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+  <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+  <li><a href="#"><i class="fab fa-github"></i></a></li>
+</ul>
+<% end %>
+        <ul>
+          <li>
+            <p>Accompagné d'un peu de style CSS</p> 
+          </li>
+        </ul>
+<% code("css") do %>
+#footer a {
+  color: lightgrey;
+  font-size: 15px;
+}
+#footer a:hover {
+  color: white;
+}
+<% end %>
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">7. Bootstrap <tag class="purple">setup</tag></h2>
+        <ul>
+          <li>
+            <p>Liez le stylesheet de Bootstrap dans le <code>head</code> section de votre HTML <strong>avant le lien de votre stylesheet</strong></p> 
+          </li>
+        </ul>
+<% code("html") do %>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href='style.css' rel='stylesheet'>
+</head>
+<% end %>
+        <ul>
+          <li>
+            <p>Jouez avec <code>class="btn btn-primary"</code> et <code>class="list-inline"</code>, vos premières classes Bootstrap</p>
+          </li>
+        </ul>
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">8. Bootstrap <tag class="blue">grid</tag></h2>
+        <ul>
+          <li>Insérez vos 4 div cartes dans le grid responsive suivant</li>
+        </ul>
+<% code("html") do %>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <!-- div class="card" -->
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <!-- div class="card" -->
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <!-- div class="card" -->
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <!-- div class="card" -->
+    </div>
+  </div>
+</div>
+<% end %>
+      <img src="images/laptop-bottom.svg" alt="laptop" class="laptop">
+      </section>
+    </div>
+  </div>
+</div>
