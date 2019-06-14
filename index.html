@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- For Bootstrap responsiveness -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/lewagon.png" type="image/x-icon" />
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Landing page HTML/CSS - Coding day</title>
+
+    <link href="stylesheets/all.css" rel="stylesheet" type="text/css" />
+    <script src="javascripts/all.js" type="text/javascript"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- Leave those next 4 lines if you care about users using IE8 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="banner">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <div class="banner-content">
+          <div class="banner-content-left">
+            <h1>Landing page <tag class="red">workshop</tag>.</h1>
+            <p>Apprendre à coder et designer sa propre<br>landing page en HTML et CSS. </p>
+            <div class="logo-container">
+              <img src="images/lewagon-logo.png" alt="Le wagon logo" width="150px">
+            </div>
+          </div>
+          <div class="banner-content-right">
+            <img src="images/banner.jpg" alt="developer">
+            <svg id="background-sky" height="391" viewBox="0 0 1018 391" width="1018" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <pattern id="a" height="48" patternUnits="userSpaceOnUse" width="48" x="616.244244" y="-48">
+                <image height="96" transform="scale(1)" width="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAAAXNSR0IArs4c6QAAAAlwSFlzAAAWJQAAFiUBSVIk8AAABO5JREFUeAHt3TGuFTEMBVBgI5T07H8N9JSsBDTdJUHKR9PE9qFy0HxpfBy/wtbT+/xp+ffr54/f+V9fv33/nOdT7O/55R25/f58yZcVE5gmoAGmVVy+fwlogL84HAgQIECAAAECBAgQIECgs8B/zfgfCHN+c/5siNvn/Pmu/7q/pkCrkPMoAQ0wqtySXQU0wCriTIAAAQIECBAgQIAAAQJtBbY9gDm/OX/e9upz/tP7mwJltcXjBDTAuJJLOAU0QGqICRAgQIAAAQIECBAgQKC1wLYHOGVrT2BPkHfkNGfPZ5/4tvtjCrRWyHmUgAYYVW7JrgIaYBVxJkCAAAECBAgQIECAAIG2Atse4LY5bfU5s/e/+/clTIHafrZJ7CMCGuAjSp5pK6AB2pZWYgQIECBAgAABAgQIECCwCmx7gPWB9WxP4PsAeSeq7zlMgbKa4nECGmBcySWcAhogNcQECBAgQIAAAQIECBAg0Fpg2wOY85vz542vPuc/vb8pUFZbPE5AA4wruYRTQAOkhpgAAQIECBAgQIAAAQIEWgtse4BTtvYE9gR5R05z9nz2iW+7P6ZAa4WcRwlogFHlluwqoAFWEWcCBAgQIECAAAECBAgQaCuw7QFum9NWnzN7f78P0PbTQ2L1BYxB69dQBi8ENMALPH9KgAABAgQIECBAgAABArUEtj3A6fXtCXwfIO9I9T2HKVBWUzxOQAOMK7mEU0ADpIaYAAECBAgQIECAAAECBFoLbHsAc35z/rzx1ef8p/c3Bcpqi8cJaIBxJZdwCmiA1BATIECAAAECBAgQIECAQGuBbQ9wytaewJ4g78hpzp7PPvFt98cUaK2Q8ygBDTCq3JJdBTTAKuJMgAABAgQIECBAgAABAm0Ftj3AbXPa6nNm7+/3Adp+ekisvoAxaP0ayuCFgAZ4gedPCRAgQIAAAQIECBAgQKCWwLYHOL2+PYHvA+Qdqb7nMAXKaorHCWiAcSWXcApogNQQEyBAgAABAgQIECBAgEBrgW0PYM5vzp83vvqc//T+pkBZbfE4AQ0wruQSTgENkBpiAgQIECBAgAABAgQIEGgtsO0BTtnaE9gT5B05zdnz2Se+7f6YAq0Vch4loAFGlVuyq4AGWEWcCRAgQIAAAQIECBAgQKCtwLYHuG1OW33O7P39PkDbTw+J1RcwBq1fQxm8ENAAL/D8KQECBAgQIECAAAECBAjUEtj2AKfXtyfwfYC8I9X3HKZAWU3xOAENMK7kEk4BDZAaYgIECBAgQIAAAQIECBBoLbDtAcz5zfnzxlef85/e3xQoqy0eJ6ABxpVcwimgAVJDTIAAAQIECBAgQIAAAQKtBbY9wClbewJ7grwjpzl7PvvEt90fU6C1Qs6jBDTAqHJLdhXQAKuIMwECBAgQIECAAAECBAi0Fdj2ALfNaavPmb2/3wdo++khsfoCxqD1ayiDFwIa4AWePyVAgAABAgQIECBAgACBWgLbHuD0+vYEvg+Qd6T6nsMUKKspHiegAcaVXMIpoAFSQ0yAAAECBAgQIECAAAECrQW2PYA5vzl/3vjqc/7T+5sCZbXF4wQ0wLiSSzgFNEBqiAkQIECAAAECBAgQIECgtcC2Bzhla09gT5B35DRnz2ef+Lb7Ywq0Vsh5lIAGGFVuya4CGmAVcSZAgAABAgQIECBAgACBtgJ/AC5GezmSpaWkAAAAAElFTkSuQmCC"></image>
+              </pattern>
+              <path d="m1614.82652 243.70926c-86.49123-1.892197-188.32264-25.113187-286.6599-50.545875-65.55818-16.955126-181.81358-65.447987-348.7662-145.4785846-38.292446-17.6749751-28.862416-32.2165667 28.29009-43.62477488 85.72876-17.11231222 185.1085 23.79596948 232.6901 49.65705878 47.58159 25.8610893 190.52531 101.7670617 407.43444 125.9206207 216.90912 24.15356 53.5027 65.963752-32.98853 64.071555zm-212.15585-150.5976233c-66.81841-23.8916307-94.1675-38.237102-82.04728-43.0364137 18.18034-7.1989676 234.25289 39.6060179 320.38241 50.440193 86.12952 10.834175 112.87851 29.065385 122.59633 38.927609 9.71783 9.862225 17.00979 22.552285-91.23416 13.795562-108.24394-8.756724-159.46912-23.288622-197.05259-34.74569-25.05565-7.638045-49.27055-16.098465-72.64471-25.3812603zm-737.521983 103.3663893c54.529357-5.238653 92.431253-9.756375 113.705688-13.553165 57.194218-10.207297 92.65946-23.753025 106.395725-40.637186 33.003105-40.566319 37.217013-87.7450962 125.27823-42.9368062 88.06122 44.8082902 359.19042 154.1278262 697.88573 190.7491532 261.31563 28.254672 243.3299 186.369505 12.02344 110.457032-99.49219-32.652344-420.208-112.999238-572.52438-140.656484-139.20323-25.276193-261.845225-43.009625-367.925991-53.200295-28.004636-2.690271-66.271407-5.433084-114.800314-8.228439l-.000003.000049c-.551397-.031762-.972645-.504506-.940884-1.055903.028371-.492527.411677-.890778.902759-.937956z" fill="url(#a)" fill-rule="evenodd" opacity=".7" transform="translate(-670)"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid readme">
+  <div class="row">
+    <div class="col-xs-12">
+
+      <section class="readme-section">
+        <h2 class="readme-header">1. Commençons par le <tag class="green">setup</tag></h2>
+        <ol>
+          <li>1 - Ouvrez Sublime Text. un fenêtre noir devrait s'afficher.</li>
+          <li>2 - Créez un dossier <code>landing</code> sur votre bureaux. Glissez & déposez ce dossier dans Sublime Text window.</li>
+          <li>
+            3 - Dans la navigation gauche de Sublime Text :
+            <ul>
+              <li>Clique droit <strong>"New file"</strong></li>
+              <li>Enregistrez sous en le nommant <code>index.html</code> avec <strong>Cmd + S</strong> ou <strong>Ctrl + S</strong></li>
+              <li>Réitérez en créant le fichier <code>style.css</code></li>
+              <li>Ensuite choisissez <strong>"New Folder"</strong> et créez un dossier <code>images</code></li>
+            </ul>
+            </ul>
+          </li>
+          <li>4 - Pour finir double-cliquez sur <code>index.html</code> pour l'ouvrir dans Chrome</li>
+        </ol>
+
+        <img src='images/setup.png' width="100%" style="box-shadow: 0 15px 35px rgba(126,87,88,.1), 0 5px 15px rgba(0,0,0,.07);" />
+      </section>
+
+      <section class="readme-section">
+        <h2 class="readme-header">2. Ajoutons du contenu <tag class="purple">HTML</tag></h2>
+        <ul>
+          <li>
+            Pour gagner du temps, Faites clique-droit sur les images suivantes et sauvez les dans votre dossier <code>images</code>
+            <ul class="list-inline">
+              <li><img src="images/kiwi.svg" alt="" width="80"></li>
+              <li><img src="images/fridge.svg" alt="" width="80"></li>
+              <li><img src="images/earth.svg" alt="" width="80"></li>
+              <li><img src="images/bowl.svg" alt="" width="80"></li>
+            </ul>
+          </li>
+          <li>Commencez ensuite à partir de ce code HTML dans <code>index.html</code></li>
+        </ul>
+<div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Coding day landing page<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Bienvenur sur Food Huggers<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Économiseurs d'aliments réutilisables en silicone<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Contactez nous<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/kiwi.svg"</span> <span class="na">alt=</span><span class="s">"icon kiwi"</span> <span class="na">width=</span><span class="s">"100"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>Préservez vos fruits<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Et conservez toute leur fraîcheur<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/fridge.svg"</span> <span class="na">alt=</span><span class="s">"icon frigo"</span> <span class="na">width=</span><span class="s">"100"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>Mettez de l'ordre dans le frigidaire<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Fini les restes qui pourrissent au fond de notre frigo<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/earth.svg"</span> <span class="na">alt=</span><span class="s">"icon earth"</span> <span class="na">width=</span><span class="s">"100"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>Réduisez vos déchets<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Les déchets alimentaires représentent 30% de nos déchets<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/bowl.svg"</span> <span class="na">alt=</span><span class="s">"icon bole"</span> <span class="na">width=</span><span class="s">"100"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>Dégustez sans modération<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Et transactions dans le cadre de contentieux.<span class="nt">&lt;/p&gt;</span>
+
+    <span class="nt">&lt;p&gt;</span>Landing page créée par ©Coding day<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>        <h3>Extra - utiliser des icons personnels chiadés</h3>
+        <ul>
+          <li>Vous pouvez choisir vos icons sur <a href="https://iconstore.co/" target="_blank">IconStore</a>, <a href="https://thenounproject.com/" target="_blank">The Noun Project</a> ou <a href="https://nucleoapp.com/premium-icons/" target="_blank">NucleoApp</a> (ils ont des packs gratuits).</li>
+          <li><strong>Tips</strong>: Ne manquez pas de surveiller <a href="https://www.producthunt.com/search?q=icons" target="_blank">les nouvelles ressources d'icons sur Product Hunt</a></li>
+        </ul>
+      </section>
+
+      <section class="readme-section">
+        <h2 class="readme-header">3. <tag class="blue">CSS</tag> pour la font & couleur</h2>
+        <ul>
+          <li>
+            <p>Lier votre stylesheet <code>style.css</code> dans la section <code>head</code> de votre HTML</p>
+          </li>
+        </ul>
+
+
+<div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">'style.css'</span> <span class="na">rel=</span><span class="s">'stylesheet'</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+</code></pre></div>        <p>Copiez/collez ensuite le code CSS ci-dessous <code>style.css</code> et <strong>modifier le</strong> car il est intentionellement disgracieux</p>
+        <ul>
+          <li>Pour les fonts utilisez <a href="https://www.google.com/fonts" target="_blank">Google Fonts</a></li>
+          <li>Pour les couleurs utilisez <a href="http://www.colorzilla.com/chrome/" target="_blank">Chrome plugin Colorzilla</a> pour récupérer les couleurs des autres sites</li>
+          <li>Vous trouverez aussi de belles inspirations couleurs sur <a href="https://coolors.co/" target="_blank">Coolors</a> ou <a href="https://colorhunt.co/" target="_blank">Color Hunt</a></li>
+        </ul>
+<div class="highlight"><pre class="highlight css"><code><span class="c">/* style.css */</span>
+<span class="nt">body</span><span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">245</span><span class="p">,</span><span class="m">245</span><span class="p">,</span><span class="m">245</span><span class="p">);</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">green</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">25px</span><span class="p">;</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">Helvetica</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h1</span><span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">Courier</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">lighter</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">h2</span> <span class="p">{</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="n">Courier</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">pink</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">lighter</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">8px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">yellow</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">purple</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">4. Découper en <tag class="red">div</tag></h2>
+        <ul>
+          <li>
+            <p>Enveloppez les différentes sections dans différentes <code>div</code></p>
+          </li>
+        </ul>
+
+<div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>Bienvenur sur Food Huggers<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Économiseurs d'aliments réutilisables en silicone<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Contactez nous<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/kiwi.svg"</span> <span class="na">alt=</span><span class="s">"icon kiwi"</span> <span class="na">width=</span><span class="s">"100"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h2&gt;</span>Préservez vos fruits<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Et conservez toute leur fraîcheur<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/fridge.svg"</span> <span class="na">alt=</span><span class="s">"icon frigo"</span> <span class="na">width=</span><span class="s">"100"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h2&gt;</span>Mettez de l'ordre dans le frigidaire<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Fini les restes qui pourrissent au fond de notre frigo<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/earth.svg"</span> <span class="na">alt=</span><span class="s">"icon earth"</span> <span class="na">width=</span><span class="s">"100"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h2&gt;</span>Réduisez vos déchets<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Les déchets alimentaires représentent 30% de nos déchets<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/bowl.svg"</span> <span class="na">alt=</span><span class="s">"icon bole"</span> <span class="na">width=</span><span class="s">"100"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h2&gt;</span>Dégustez sans modération<span class="nt">&lt;/h2&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Et transactions dans le cadre de contentieux.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Landing page créée par ©Coding day<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">5. Nommer les <tag class="yellow">tags</tag></h2>
+        <ul>
+          <li>Nommer votre banner et footer en utilisant un <code>id</code> commme <code>&lt;div id="banner"&gt;</code> et <code>&lt;div id="footer"&gt;</code></li>
+          <li>Nommer vos fonctionnalités en utilisant une <code>class</code> comme <code>&lt;div class="card"&gt;</code></li>
+          <li>Ajoutez ensuite ce code CSS</li>
+        </ul>
+<div class="highlight"><pre class="highlight css"><code><span class="nf">#banner</span><span class="p">{</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="n">rgba</span><span class="p">(</span><span class="m">200</span><span class="p">,</span> <span class="m">200</span><span class="p">,</span> <span class="m">200</span><span class="p">,</span> <span class="m">0.3</span><span class="p">),</span> <span class="n">rgba</span><span class="p">(</span><span class="m">200</span><span class="p">,</span> <span class="m">200</span><span class="p">,</span> <span class="m">200</span><span class="p">,</span> <span class="m">0.3</span><span class="p">)),</span> <span class="sx">url("https://source.unsplash.com/1600x900/?vegetables")</span><span class="p">;</span>
+  <span class="nl">background-size</span><span class="p">:</span> <span class="n">cover</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">150px</span> <span class="m">0</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#banner</span> <span class="nt">h1</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#banner</span> <span class="nt">p</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+  <span class="nl">opacity</span><span class="p">:</span> <span class="m">0.8</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">lighter</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#footer</span><span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">30</span><span class="p">,</span> <span class="m">30</span><span class="p">,</span> <span class="m">30</span><span class="p">);</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">lightgrey</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.card</span><span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+  <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">lighter</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.container</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="cp">!important</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3>Extra - trouver une belle image de fond</h3>
+<ul>
+  <li>Vous trouverez des examples d'images sur <a href="https://www.pexels.com/" target="_blank">Pexels</a></li>
+</ul>
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">6. <tag class="green">Fontawesome</tag> pour les icons</h2>
+        <ul>
+          <li>
+            <p>Ajoutez le stylesheet fontawesome dans votre <code>head</code></p>
+          </li>
+        </ul>
+<div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://use.fontawesome.com/releases/v5.5.0/css/all.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+</code></pre></div>        <ul>
+          <li>
+            <p>Ajoutez ensuite ceci dans le footer</p>
+          </li>
+        </ul>
+<div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-youtube"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-facebook"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-twitter"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">"fab fa-github"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div>        <ul>
+          <li>
+            <p>Accompagné d'un peu de style CSS</p>
+          </li>
+        </ul>
+<div class="highlight"><pre class="highlight css"><code><span class="nf">#footer</span> <span class="nt">a</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">lightgrey</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#footer</span> <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">7. Bootstrap <tag class="purple">setup</tag></h2>
+        <ul>
+          <li>
+            <p>Liez le stylesheet de Bootstrap dans le <code>head</code> section de votre HTML <strong>avant le lien de votre stylesheet</strong></p>
+          </li>
+        </ul>
+<div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"</span> <span class="na">integrity=</span><span class="s">"sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">'style.css'</span> <span class="na">rel=</span><span class="s">'stylesheet'</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+</code></pre></div>        <ul>
+          <li>
+            <p>Jouez avec <code>class="btn btn-primary"</code> et <code>class="list-inline"</code>, vos premières classes Bootstrap</p>
+          </li>
+        </ul>
+      </section>
+      <section class="readme-section">
+        <h2 class="readme-header">8. Bootstrap <tag class="blue">grid</tag></h2>
+        <ul>
+          <li>Insérez vos 4 div cartes dans le grid responsive suivant</li>
+        </ul>
+<div class="highlight"><pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-6 col-md-3"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- div class="card" --&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-6 col-md-3"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- div class="card" --&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-6 col-md-3"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- div class="card" --&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-6 col-md-3"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- div class="card" --&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div>      <img src="images/laptop-bottom.svg" alt="laptop" class="laptop">
+      </section>
+    </div>
+  </div>
+</div>
+
+  </body>
+
+</html>
