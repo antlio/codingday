@@ -1,1 +1,1 @@
-## HTML/CSS landing page workshop for Troispointquatorze
+## HTML/CSS landing page workshop for coding day
